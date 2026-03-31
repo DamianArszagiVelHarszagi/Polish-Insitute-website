@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Polskie Centrum Kształcenia im. Jana Pawła II | Bruksela</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./src/style.css" />
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="topbar-inner">
+				<div class="topbar-left">
+					<span>📍 Avenue Félix Marchal 50, 1030 Bruxelles</span>
+					<span>📞 +32 486 38 40 07</span>
+				</div>
+				<div class="topbar-right topbar-social">
+					<a href="https://www.facebook.com/szkola.be" target="_blank">
+						Facebook
+					</a>
+					<a
+						href="https://www.youtube.com/channel/UCyFGR0-s9dmNtX-SMqHbrLw"
+						target="_blank"
+					>
+						YouTube
+					</a>
+					<a href="mailto:info@szkola.be"> info@szkola.be </a>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar" id="navbar">
+			<div class="nav-inner">
+				<a href="#" class="nav-logo">
+					<div class="logo-emblem"></div>
+					<div class="logo-text-block">
+						<span class="logo-title">Polskie Centrum Kształcenia</span>
+						<span class="logo-subtitle">im. Jana Pawła II · Bruksela</span>
+					</div>
+				</a>
+				<ul class="nav-links">
+					<li><a href="#about">O nas</a></li>
+					<li><a href="#programs">Osiągnięcia</a></li>
+					<li><a href="#news">Aktualności</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+					<li><a href="#enrollment" class="nav-cta">Zapisz się →</a></li>
+				</ul>
+				<div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+					<span></span><span></span><span></span>
+				</div>
+			</div>
+		</nav>
+
+		<div class="mobile-menu" id="mobileMenu">
+			<button class="mobile-close" onclick="toggleMenu()">✕</button>
+			<a href="#about" onclick="toggleMenu()">O nas</a>
+			<a href="#programs" onclick="toggleMenu()">Klasy</a>
+			<a href="#news" onclick="toggleMenu()">Aktualności</a>
+			<a href="#enrollment" onclick="toggleMenu()">Zapisy</a>
+			<a href="#contact" onclick="toggleMenu()">Kontakt</a>
+		</div>
+
+		<section class="hero" id="home">
+			<div class="hero-bg"></div>
+			<div class="hero-overlay"></div>
+			<div class="hero-pattern"></div>
+			<div class="hero-inner">
+				<div class="hero-content">
+					<div class="hero-badge">🏫 Bruksela · Belgia · Od 1990</div>
+					<h1 class="hero-title">
+						Uczymy <em>z pasją,</em><br />łączymy kultury.
+					</h1>
+					<p class="hero-desc">
+						Polskie Centrum Kształcenia im. Jana Pawła II w Brukseli — szkoła
+						uzupełniająca dla dzieci Polonii belgijskiej. Język, historia,
+						tożsamość.
+					</p>
+					<div class="hero-actions">
+						<a href="#enrollment" class="btn btn-primary">📋 Zapisz dziecko</a>
+						<a href="#about" class="btn btn-outline">Dowiedz się więcej</a>
+					</div>
+				</div>
+				<div class="hero-card">
+					<div class="hero-card-title">Szybki dostęp</div>
+					<div class="quick-links">
+						<a href="#enrollment" class="quick-link">
+							<div class="quick-link-icon">📝</div>
+							Zapisy do szkoły 2026
+							<span class="quick-link-arrow">→</span>
+						</a>
+						<a href="https://szkola.be/plan-zajec" class="quick-link">
+							<div class="quick-link-icon">🗓️</div>
+							Plan zajęć
+							<span class="quick-link-arrow">→</span>
+						</a>
+						<a href="https://szkola.be/wykaz-podrecznikow" class="quick-link">
+							<div class="quick-link-icon">📚</div>
+							Wykaz podręczników
+							<span class="quick-link-arrow">→</span>
+						</a>
+						<a href="https://szkola.be/kadra" class="quick-link">
+							<div class="quick-link-icon">👩‍🏫</div>
+							Kadra
+							<span class="quick-link-arrow">→</span>
+						</a>
+						<a href="#contact" class="quick-link">
+							<div class="quick-link-icon">📞</div>
+							Kontakt z szkołą
+							<span class="quick-link-arrow">→</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-scroll">
+				<span>Scroll</span>
+				<div class="hero-scroll-line"></div>
+			</div>
+		</section>
+
+		<div class="features-strip">
+			<div class="features-inner">
+				<div class="feature-item">
+					<span class="feature-item-icon">📅</span> Zajęcia dwa razy w tygodniu
+				</div>
+				<div class="feature-item">
+					<span class="feature-item-icon">📖</span> Sprawdzone metody nauczania
+				</div>
+				<div class="feature-item">
+					<span class="feature-item-icon">🇵🇱</span> Finansowane przez IRJP
+					Polska
+				</div>
+				<div class="feature-item">
+					<span class="feature-item-icon">🇧🇪</span> Zarejestrowana ASBL w Belgii
+				</div>
+			</div>
+		</div>
+
+		<section class="section about" id="about">
+			<div class="section-inner">
+				<div class="about-grid">
+					<div class="about-photo reveal-left">
+						<div class="about-photo-frame">
+							<img src="./src/assets/zdjecie_home.jpg" />
+						</div>
+						<div class="about-photo-badge">30+ lat<br />działalności</div>
+					</div>
+					<div class="about-content reveal-right">
+						<div class="section-tag">O naszej szkole</div>
+						<h2
+							class="section-title"
+							style="text-align: left; margin-bottom: 8px"
+						>
+							Polska szkoła<br />w samym sercu Europy
+						</h2>
+						<div class="section-divider" style="margin: 0 0 24px 0"></div>
+						<p class="about-lead">
+							Od ponad 35 lat łączymy Polonię belgijską — przekazujemy język,
+							kulturę i historię Polski kolejnym pokoleniom.
+						</p>
+						<p class="about-body">
+							Polskie Centrum Kształcenia im. Jana Pawła II w Brukseli to szkoła
+							uzupełniająca, w której uczniowie uczą się języka polskiego,
+							historii i kultury raz w tygodniu. Nasze sprawdzone metody
+							dydaktyczne zostały docenione na arenie międzynarodowej i
+							opublikowane przez Akademię Umiejętności w Krakowie.
+						</p>
+						<div class="about-features">
+							<div class="about-feat">
+								<div class="about-feat-icon">🎯</div>
+								<div class="about-feat-text">
+									Sprawdzone metody nauczania czytania i pisania
+								</div>
+							</div>
+							<div class="about-feat">
+								<div class="about-feat-icon">👨‍👩‍👧</div>
+								<div class="about-feat-text">Zajęcia z udziałem rodziców</div>
+							</div>
+							<div class="about-feat">
+								<div class="about-feat-icon">🎭</div>
+								<div class="about-feat-text">
+									Uroczystości patriotyczne i kulturalne
+								</div>
+							</div>
+							<div class="about-feat">
+								<div class="about-feat-icon">📜</div>
+								<div class="about-feat-text">Kursy językowe i olimpiady</div>
+							</div>
+						</div>
+						<a href="#" class="btn_poznaj">Poznaj naszą szkołę →</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section programs" id="programs">
+			<div class="section-inner">
+				<div class="section-header reveal">
+					<div class="section-tag">Osiągnięcia</div>
+					<h2 class="section-title">Nasze osiągnięcia edukacyjne</h2>
+					<p class="section-subtitle">
+						jeszcze nie skonczona sekcja, trzeba jeszcze wymyslec
+					</p>
+					<div class="section-divider"></div>
+				</div>
+				<div class="programs-grid">
+					<div class="program-card reveal" style="transition-delay: 0.1s">
+						<div class="program-icon">🧸</div>
+						<div class="program-age">cos tu bedzie jeszcze</div>
+						<div class="program-title">###</div>
+						<p class="program-desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+							ut ultricies urna.
+						</p>
+					</div>
+					<div class="program-card reveal" style="transition-delay: 0.2s">
+						<div class="program-icon">🔤</div>
+						<div class="program-age">cos tu bedzie jeszcze</div>
+						<div class="program-title">###</div>
+						<p class="program-desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+							ut ultricies urna.
+						</p>
+					</div>
+					<div class="program-card reveal" style="transition-delay: 0.3s">
+						<div class="program-icon">📖</div>
+						<div class="program-age">cos tu bedzie jeszcze</div>
+						<div class="program-title">###</div>
+						<p class="program-desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+							ut ultricies urna.
+						</p>
+					</div>
+					<div class="program-card reveal" style="transition-delay: 0.4s">
+						<div class="program-icon">🎓</div>
+						<div class="program-age">cos tu bedzie jeszcze</div>
+						<div class="program-title">###</div>
+						<p class="program-desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+							ut ultricies urna.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section news" id="news">
+			<div class="section-inner">
+				<div class="section-header reveal">
+					<div class="section-tag">Aktualności</div>
+					<h2 class="section-title">Życie szkoły</h2>
+					<p class="section-subtitle">
+						Najnowsze wydarzenia, uroczystości i sukcesy naszych uczniów
+					</p>
+					<div class="section-divider"></div>
+				</div>
+				<div class="news-grid">
+					<div class="news-card featured reveal-left">
+						<div class="news-card-img">
+							<img src="./src/assets/rodzicamilekcje.jpg" />
+							<div class="news-card-cat">Wyróżnione</div>
+						</div>
+						<div class="news-card-body">
+							<div class="news-card-date">📅 Listopad 2025</div>
+							<h3 class="news-card-title">
+								O szkolnych sukcesach — zajęcia otwarte dla rodziców
+							</h3>
+							<p class="news-card-text">
+								W środę 12 i sobotę 15 listopada po 3 miesiącach nauki odbyły
+								się zajęcia lekcyjne z udziałem rodziców. Uczniowie pierwszych
+								klas prezentowali nabyte umiejętności — a szczególnie
+								umiejętność czytania.
+							</p>
+							<a
+								href="https://szkola.be/248-o-szkolnych-sukcesach"
+								class="news-card-link"
+								>Czytaj więcej →</a
+							>
+						</div>
+					</div>
+
+					<div class="news-card reveal" style="transition-delay: 0.15s">
+						<div class="news-card-img">
+							<img
+								src="./src/assets/11listopada.png"
+								alt="Obchody Święta Niepodległości"
+							/>
+							<div class="news-card-cat">Wydarzenie</div>
+						</div>
+						<div class="news-card-body">
+							<div class="news-card-date">📅 Listopad 2025</div>
+							<h3 class="news-card-title">Obchody Święta Niepodległości</h3>
+							<p class="news-card-text">
+								Uczniowie recytowali wiersze i śpiewali pieśni patriotyczne.
+								Odśpiewano hymn z całą szkołą.
+							</p>
+							<a
+								href="https://szkola.be/245-obchody-swieta-niepodleglosci"
+								class="news-card-link"
+								>Czytaj więcej →</a
+							>
+						</div>
+					</div>
+
+					<div class="news-card reveal" style="transition-delay: 0.3s">
+						<div class="news-card-img">
+							<img src="./src/assets/kids_learning.png" />
+							<div class="news-card-cat">Klasy przedszkolne</div>
+						</div>
+						<div class="news-card-body">
+							<div class="news-card-date">📅 Wrzesień 2025</div>
+							<h3 class="news-card-title">
+								Klasy przedszkolne przepełnione pasją tworzenia
+							</h3>
+							<p class="news-card-text">
+								Dzieci uczestniczą w procesie przygotowania się do nauki
+								czytania i pisania w radosnej atmosferze.
+							</p>
+							<a
+								href="https://szkola.be/244-klasy-przedszkolne-przepelnione-pasja-tworzenia"
+								class="news-card-link"
+								>Czytaj więcej →</a
+							>
+						</div>
+					</div>
+
+					<div
+						class="news-card reveal"
+						style="transition-delay: 0.45s; grid-column: span 2"
+					>
+						<div style="display: flex; height: 100%">
+							<div
+								class="news-card-img"
+								style="height: 160px; width: 240px; flex-shrink: 0"
+							>
+								<img src="./src/assets/lommel.jpg" />
+								<div class="news-card-cat">Historia</div>
+							</div>
+							<div class="news-card-body">
+								<div class="news-card-date">📅 Wrzesień 2025</div>
+								<h3 class="news-card-title">
+									Hołd pamięci — uroczystości w Lommel
+								</h3>
+								<p class="news-card-text">
+									28 września coroczna uroczystość polsko-belgijska na Cmentarzu
+									Wojskowym w Lommel. Ponad 200 polskich żołnierzy z I Pancernej
+									Dywizji gen. Maczka.
+								</p>
+								<a
+									href="https://szkola.be/243-hold-pamieci-uroczystosci-w-lommel"
+									class="news-card-link"
+									>Czytaj więcej →</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--  ma jeszcze znalezc zdjecia -->
+		<section class="section gallery" id="gallery">
+			<div class="section-inner">
+				<div class="section-header reveal">
+					<div class="section-tag">Galeria</div>
+					<h2 class="section-title">Chwile z życia szkoły</h2>
+					<div class="section-divider"></div>
+				</div>
+				<div class="gallery-grid reveal">
+					<div class="gallery-item">
+						<span>wybierz jakies zdjecia i mi wyslji</span>
+						<div class="gallery-item-overlay"></div>
+					</div>
+					<div class="gallery-item">
+						<span>wybierz jakies zdjecia i mi wyslji</span>
+						<div class="gallery-item-overlay"></div>
+					</div>
+					<div class="gallery-item">
+						<span>wybierz jakies zdjecia i mi wyslji</span>
+						<div class="gallery-item-overlay"></div>
+					</div>
+					<div class="gallery-item">
+						<span>wybierz jakies zdjecia i mi wyslji</span>
+						<div class="gallery-item-overlay"></div>
+					</div>
+					<div class="gallery-item">
+						<div class="gallery-item-overlay"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="enrollment" id="enrollment">
+			<div class="enrollment-blob"></div>
+			<div class="enrollment-inner">
+				<div class="reveal-left">
+					<div class="enrollment-tag">🗓️ Zapisy otwarte od 1 marca 2026</div>
+					<h2 class="enrollment-title">
+						Zapisz swoje dziecko do<br /><span>polskiej szkoły</span>
+					</h2>
+					<p class="enrollment-desc">
+						Przyjmujemy zapisy do klas... (nie wiem do jakich klas napisz mi).
+						Zajęcia odbywają się dwa razy w tygodniu w sobotę lub środę —
+						doskonałe uzupełnienie belgijskiej edukacji.
+					</p>
+					<div class="enrollment-steps">
+						<div class="enrollment-step">
+							<div class="enrollment-step-num">1</div>
+							<div class="enrollment-step-text">
+								nie znam etapow, jeszcze do poprawy
+							</div>
+						</div>
+						<div class="enrollment-step">
+							<div class="enrollment-step-num">2</div>
+							<div class="enrollment-step-text">
+								nie znam etapow, jeszcze do poprawy
+							</div>
+						</div>
+						<div class="enrollment-step">
+							<div class="enrollment-step-num">3</div>
+							<div class="enrollment-step-text">
+								nie znam etapow, jeszcze do poprawy
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="enrollment-form-card reveal-right">
+					<div class="enrollment-form-title">📝 Formularz zapisu online</div>
+					<p
+						style="
+							font-size: 0.88rem;
+							color: var(--gray-500);
+							text-align: center;
+							margin-bottom: 28px;
+							line-height: 1.6;
+						"
+					>
+						Zapisy odbywają się przez oficjalny formularz szkoły. Kliknij
+						poniżej, aby go wypełnić — zajmuje to tylko kilka minut.
+					</p>
+					<a
+						href="https://forms.office.com/Pages/ResponsePage.aspx?id=svvyth096U6ke6jAX7eeUXSlE-Ln1HlEiEymvHwu4-xURVlCNzYyRVRZS1g1N1dIWUdUSTRBVkVVSy4u"
+						target="_blank"
+						class="form-submit"
+						style="
+							display: block;
+							text-align: center;
+							font-size: 1rem;
+							letter-spacing: 0.03em;
+						"
+					>
+						Wypełnij formularz zapisu →
+					</a>
+					<div
+						style="
+							margin-top: 24px;
+							padding-top: 20px;
+							border-top: 1px solid var(--gray-300);
+						"
+					>
+						<div
+							style="
+								font-size: 0.72rem;
+								font-weight: 700;
+								color: var(--gray-500);
+								text-transform: uppercase;
+								letter-spacing: 0.08em;
+								margin-bottom: 12px;
+							"
+						>
+							Lub skontaktuj się bezpośrednio
+						</div>
+						<div class="contact-direct">
+							<a href="tel:+32 486 38 40 07"
+								><span class="contact-direct-icon">📞</span> +32 486 38 40 07</a
+							>
+							<a href="mailto:info@szkola.be"
+								><span class="contact-direct-icon">✉️</span> info@szkola.be</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section contact" id="contact">
+			<div class="section-inner">
+				<div class="section-header reveal">
+					<div class="section-tag">Kontakt</div>
+					<h2 class="section-title">Jak nas znaleźć</h2>
+					<div class="section-divider"></div>
+				</div>
+				<div class="contact-grid">
+					<div class="contact-info reveal-left">
+						<div class="contact-item">
+							<div class="contact-item-icon">📍</div>
+							<div>
+								<div class="contact-item-label">Adres szkoły</div>
+								<div class="contact-item-value">
+									Avenue Félix Marchal 50<br />1030 Bruxelles, Belgia
+								</div>
+							</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-item-icon">📞</div>
+							<div>
+								<div class="contact-item-label">Telefon</div>
+								<div class="contact-item-value">
+									<a href="tel:+32 486 38 40 07" style="color: var(--navy)"
+										>+32 486 38 40 07</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-item-icon">✉️</div>
+							<div>
+								<div class="contact-item-label">E-mail</div>
+								<div class="contact-item-value">
+									<a href="mailto:info@szkola.be" style="color: var(--gold)"
+										>info@szkola.be</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-item-icon">👩‍💼</div>
+							<div>
+								<div class="contact-item-label">Dyrektor szkoły</div>
+								<div class="contact-item-value">
+									Teresa Arszagi vel Harszagi
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="contact-item"
+							style="border-bottom: none; padding-bottom: 0"
+						>
+							<div class="contact-item-icon">🏦</div>
+							<div>
+								<div class="contact-item-label">Konto bankowe (Belfius)</div>
+								<div
+									class="contact-item-value"
+									style="font-family: monospace; letter-spacing: 0.05em"
+								>
+									IBAN: BE13 0682 4540 1539<br />BIC: GKCCBEBB
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contact-map reveal-right">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2302.4355785908215!2d4.388631476305245!3d50.851464171671516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c359576176c5%3A0x3994d3e644e40388!2sAv.%20F%C3%A9lix%20Marchal%2050%2C%201030%20Brussel!5e1!3m2!1spl!2sbe!4v1773692716177!5m2!1spl!2sbe"
+							style="width: 100%; height: 100%; border: none"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-inner">
+				<div>
+					<div class="footer-brand-name">Polskie Centrum Kształcenia</div>
+					<div class="footer-brand-sub">im. Jana Pawła II w Brukseli</div>
+					<p class="footer-brand-desc">
+						Szkoła uzupełniająca dla dzieci Polonii belgijskiej, działająca od
+						ponad 35 lat w Brukseli. Język, historia i kultura polska — 2 razy w
+						tygodniu.
+					</p>
+					<div class="footer-social">
+						<a
+							href="https://www.facebook.com/szkola.be"
+							target="_blank"
+							title="Facebook"
+							><svg
+								width="14"
+								height="14"
+								fill="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+								/>
+							</svg>
+						</a>
+						<a
+							href="https://www.youtube.com/channel/UCyFGR0-s9dmNtX-SMqHbrLw"
+							target="_blank"
+							title="YouTube"
+							>▶</a
+						>
+						<a href="mailto:info@szkola.be" title="E-mail">✉</a>
+					</div>
+				</div>
+				<div>
+					<div class="footer-col-title">Menu</div>
+					<div class="footer-links">
+						<a href="#about">O nas</a>
+						<a href="https://szkola.be/kadra">Kadra pedagogiczna</a>
+						<a href="https://szkola.be/o-nas">Historia szkoły</a>
+						<a href="https://szkola.be/osiagniecia-edukacyjne">Osiągnięcia</a>
+						<a href="https://szkola.be/programy">Programy</a>
+					</div>
+				</div>
+				<div>
+					<div class="footer-col-title">Informacje</div>
+					<div class="footer-links">
+						<a href="#enrollment">Zapisy do szkoły</a>
+						<a href="https://szkola.be/plan-zajec">Plan zajęć</a>
+						<a href="https://szkola.be/wykaz-podrecznikow"
+							>Wykaz podręczników</a
+						>
+						<a href="https://szkola.be/kursy-jezykowe">Kursy językowe</a>
+						<a href="https://szkola.be/edukacja-polonistyczna"
+							>Edukacja polonistyczna</a
+						>
+					</div>
+				</div>
+				<div>
+					<div class="footer-col-title">Kontakt</div>
+					<div class="footer-links">
+						<a href="tel:+32486384007">+32 486 38 40 07</a>
+						<a href="mailto:info@szkola.be">info@szkola.be</a>
+						<a href="#contact">Jak dojechać?</a>
+					</div>
+					<div
+						style="
+							margin-top: 20px;
+							color: rgba(255, 255, 255, 0.45);
+							font-size: 0.78rem;
+							line-height: 1.6;
+						"
+					>
+						Avenue Félix Marchal 50<br />1030 Bruxelles, Belgia
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<span
+					>© 2026 Polskie Centrum Kształcenia im. Jana Pawła II w Brukseli.
+					Wszelkie prawa zastrzeżone.</span
+				>
+				<span style="color: rgba(255, 255, 255, 0.25); font-size: 0.72rem"
+					>Polska szkoła · Bruksela, Belgia</span
+				>
+			</div>
+		</footer>
+
+		<button
+			class="back-top"
+			id="backTop"
+			onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+		>
+			↑
+		</button>
+
+		<script src="./src/main.js"></script>
+	</body>
+</html>
