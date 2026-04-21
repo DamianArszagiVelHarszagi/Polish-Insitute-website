@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kursy Językowe | Polskie Centrum Kształcenia im. Jana Pawła II</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./src/style.css" />
+		<link rel="stylesheet" href="./src/pages.css" />
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="topbar-inner">
+				<div class="topbar-left">
+					<span>📍 Avenue Félix Marchal 50, 1030 Bruxelles</span>
+					<span>📞 +32 486 38 40 07</span>
+				</div>
+				<div class="topbar-right topbar-social">
+					<a href="https://www.facebook.com/szkola.be" target="_blank">Facebook</a>
+					<a href="https://www.youtube.com/channel/UCyFGR0-s9dmNtX-SMqHbrLw" target="_blank">YouTube</a>
+					<a href="mailto:info@szkola.be">info@szkola.be</a>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar" id="navbar">
+			<div class="nav-inner">
+				<a href="./index.html" class="nav-logo">
+					<div class="logo-emblem"></div>
+					<div class="logo-text-block">
+						<span class="logo-title">Polskie Centrum Kształcenia</span>
+						<span class="logo-subtitle">im. Jana Pawła II · Bruksela</span>
+					</div>
+				</a>
+				<ul class="nav-links">
+					<li><a href="./index.html#about">O nas</a></li>
+					<li><a href="./index.html#programs">Osiągnięcia</a></li>
+					<li><a href="./index.html#news">Aktualności</a></li>
+					<li><a href="./index.html#contact">Kontakt</a></li>
+					<li><a href="./index.html#enrollment" class="nav-cta">Zapisz się →</a></li>
+				</ul>
+				<div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+					<span></span><span></span><span></span>
+				</div>
+			</div>
+		</nav>
+
+		<div class="mobile-menu" id="mobileMenu">
+			<button class="mobile-close" onclick="toggleMenu()">✕</button>
+			<a href="./index.html#about" onclick="toggleMenu()">O nas</a>
+			<a href="./index.html#programs" onclick="toggleMenu()">Osiągnięcia</a>
+			<a href="./index.html#news" onclick="toggleMenu()">Aktualności</a>
+			<a href="./index.html#enrollment" onclick="toggleMenu()">Zapisy</a>
+			<a href="./index.html#contact" onclick="toggleMenu()">Kontakt</a>
+		</div>
+
+		<section class="page-hero">
+			<div class="page-hero-inner">
+				<div class="section-tag">Języki</div>
+				<h1 class="page-hero-title">Kursy językowe</h1>
+				<div class="page-breadcrumb">
+					<a href="./index.html">Strona główna</a>
+					<span>›</span>
+					<span>Kursy językowe</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" style="background: var(--gray-100)">
+			<div class="section-inner">
+				<div class="section-header reveal">
+					<div class="section-tag">Oferta kursów</div>
+					<h2 class="section-title">Kursy języka polskiego</h2>
+					<p class="section-subtitle">
+						Oferujemy kursy języka polskiego dla dzieci, młodzieży i dorosłych na różnych poziomach zaawansowania.
+					</p>
+					<div class="section-divider"></div>
+				</div>
+
+				<div class="info-content">
+					<p class="info-lead reveal">
+						Nasze kursy językowe są przeznaczone dla osób, które chcą nauczyć się
+						lub udoskonalić znajomość języka polskiego — zarówno dzieci wychowane
+						w Belgii, jak i dorosłych pragnących odświeżyć znajomość języka ojczystego.
+					</p>
+
+					<div class="info-block reveal">
+						<div class="info-block-title">
+							<div class="info-block-icon">🌱</div>
+							Kurs dla początkujących (A1–A2)
+						</div>
+						<p>
+							Kurs przeznaczony dla osób bez znajomości lub ze słabą znajomością języka
+							polskiego. Nauka podstawowych zwrotów, słownictwa i gramatyki w przyjaznej
+							atmosferze.
+						</p>
+						<ul>
+							<li>Podstawowe zwroty i słownictwo codzienne</li>
+							<li>Alfabet, wymowa i podstawy pisowni</li>
+							<li>Prosta gramatyka: zaimki, liczba mnoga, odmiana</li>
+							<li>Konwersacje na tematy codzienne</li>
+						</ul>
+					</div>
+
+					<div class="info-block reveal">
+						<div class="info-block-title">
+							<div class="info-block-icon">📈</div>
+							Kurs średniozaawansowany (B1–B2)
+						</div>
+						<p>
+							Dla osób posiadających podstawową znajomość języka polskiego, które chcą
+							płynniej komunikować się w mowie i piśmie.
+						</p>
+						<ul>
+							<li>Rozszerzenie słownictwa tematycznego</li>
+							<li>Gramatyka: czasy, przypadki, zdania złożone</li>
+							<li>Czytanie tekstów literackich i prasowych</li>
+							<li>Pisanie: listy, opisy, wypracowania</li>
+						</ul>
+					</div>
+
+					<div class="info-block reveal">
+						<div class="info-block-title">
+							<div class="info-block-icon">🏆</div>
+							Przygotowanie do olimpiad
+						</div>
+						<p>
+							Kurs przygotowujący uczniów do olimpiad języka polskiego dla dzieci
+							polonijnych. Intensywna praca nad językiem, literaturą i kulturą Polski.
+						</p>
+						<ul>
+							<li>Analiza i interpretacja tekstów literackich</li>
+							<li>Retoryka i techniki prezentacji</li>
+							<li>Historia języka polskiego</li>
+							<li>Ćwiczenia olimpiadowe z poprzednich edycji</li>
+						</ul>
+					</div>
+
+					<div class="info-block reveal">
+						<div class="info-block-title">
+							<div class="info-block-icon">📞</div>
+							Zapisy na kursy
+						</div>
+						<p>
+							Aby zapisać się na kurs lub uzyskać więcej informacji o aktualnej
+							ofercie i dostępnych terminach, skontaktuj się z nami:
+						</p>
+						<ul>
+							<li>Telefon: <a href="tel:+32486384007" style="color: var(--gold)">+32 486 38 40 07</a></li>
+							<li>E-mail: <a href="mailto:info@szkola.be" style="color: var(--gold)">info@szkola.be</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-inner">
+				<div>
+					<div class="footer-brand-name">Polskie Centrum Kształcenia</div>
+					<div class="footer-brand-sub">im. Jana Pawła II w Brukseli</div>
+					<p class="footer-brand-desc">
+						Szkoła uzupełniająca dla dzieci Polonii belgijskiej, działająca od
+						ponad 35 lat w Brukseli. Język, historia i kultura polska — 2 razy w
+						tygodniu.
+					</p>
+					<div class="footer-social">
+						<a href="https://www.facebook.com/szkola.be" target="_blank" title="Facebook">
+							<svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+							</svg>
+						</a>
+						<a href="https://www.youtube.com/channel/UCyFGR0-s9dmNtX-SMqHbrLw" target="_blank" title="YouTube">▶</a>
+						<a href="mailto:info@szkola.be" title="E-mail">✉</a>
+					</div>
+				</div>
+				<div>
+					<div class="footer-col-title">Menu</div>
+					<div class="footer-links">
+						<a href="./index.html#about">O nas</a>
+						<a href="./kadra.html">Kadra pedagogiczna</a>
+						<a href="./o-nas.html">Historia szkoły</a>
+						<a href="./osiagniecia-edukacyjne.html">Osiągnięcia</a>
+						<a href="./programy.html">Programy</a>
+					</div>
+				</div>
+				<div>
+					<div class="footer-col-title">Informacje</div>
+					<div class="footer-links">
+						<a href="./index.html#enrollment">Zapisy do szkoły</a>
+						<a href="./plan-zajec.html">Plan zajęć</a>
+						<a href="./wykaz-podrecznikow.html">Wykaz podręczników</a>
+						<a href="./kursy-jezykowe.html">Kursy językowe</a>
+						<a href="./edukacja-polonistyczna.html">Edukacja polonistyczna</a>
+					</div>
+				</div>
+				<div>
+					<div class="footer-col-title">Kontakt</div>
+					<div class="footer-links">
+						<a href="tel:+32486384007">+32 486 38 40 07</a>
+						<a href="mailto:info@szkola.be">info@szkola.be</a>
+						<a href="./index.html#contact">Jak dojechać?</a>
+					</div>
+					<div style="margin-top: 20px; color: rgba(255,255,255,0.45); font-size: 0.78rem; line-height: 1.6;">
+						Avenue Félix Marchal 50<br />1030 Bruxelles, Belgia
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<span>© 2026 Polskie Centrum Kształcenia im. Jana Pawła II w Brukseli. Wszelkie prawa zastrzeżone.</span>
+				<span style="color: rgba(255,255,255,0.25); font-size: 0.72rem">Polska szkoła · Bruksela, Belgia</span>
+			</div>
+		</footer>
+
+		<button class="back-top" id="backTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</button>
+		<script src="./src/main.js"></script>
+	</body>
+</html>
