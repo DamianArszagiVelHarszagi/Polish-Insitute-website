@@ -157,25 +157,15 @@ ul {
 	align-items: center;
 	gap: 14px;
 }
-.logo-emblem {
-	width: 48px;
-	height: 48px;
-	background: var(--navy);
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.logo-img {
+	width: auto;
+	height: 77px;
+	object-fit: contain;
 	flex-shrink: 0;
-	box-shadow: 0 2px 8px rgba(13, 27, 62, 0.25);
 	transition: var(--transition);
 }
-.logo-emblem:hover {
-	transform: rotate(5deg) scale(1.05);
-}
-.logo-emblem svg {
-	width: 28px;
-	height: 28px;
-	fill: var(--gold-light);
+.logo-img:hover {
+	transform: scale(1.07);
 }
 .logo-text-block {
 	line-height: 1.2;
